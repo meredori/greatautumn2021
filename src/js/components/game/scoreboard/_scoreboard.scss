@@ -1,0 +1,23 @@
+@import '../../../../styles/vars';
+
+.scoreboard {
+    font-family: 'Caveat', cursive;
+    font-size:large;
+    text-align: center;
+}
+.money-label {
+    color: $teal;
+}
+
+.water-label {
+    color: $blue;
+}
+
+.crops-label {
+    color: $orange;
+}
+.block {
+    display: inline-block;
+    width:30%
+    
+}

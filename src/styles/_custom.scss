@@ -1,2 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
-@import "./styles/custom";
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat&display=swap');
+
+html,body{
+    height: 100%
+}
+body {
+    display: flex;
+    flex-direction: column;
+    color: $almost-black;
+    background-color: $light-brown;
+}
+main{
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+
+.company-logo{
+    width: 90px;
+    height: 60px;
+}
+
+
+
+//font-family: 'Caveat', cursive;
+//font-family: 'Montserrat', sans-serif;

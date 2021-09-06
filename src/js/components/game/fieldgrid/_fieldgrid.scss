@@ -1,0 +1,12 @@
+@import '../../../../styles/vars';
+
+.field-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 8%);
+    grid-gap: 5px;
+  }
+  .field-list div {
+    background-color:$light-maroon;
+    aspect-ratio: 1;
+  }
