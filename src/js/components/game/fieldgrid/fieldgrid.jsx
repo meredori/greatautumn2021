@@ -5,7 +5,7 @@ class FieldGrid extends React.Component {
   render() {
     let fields = [];
     for (let index = 0; index < 64; index++) {
-        fields[index] = (<div></div>);       
+        fields[index] = (<div key={index}></div>);       
     }
     return (
       <div className="field-list">
