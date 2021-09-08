@@ -1,18 +1,26 @@
 import React from "react";
 import "./_fieldgrid.scss";
+import { connect, useDispatch } from 'react-redux';
+import { activateNew } from '../../../stores/game/fieldSlice'
 
 class FieldGrid extends React.Component {
   render() {
-    let fields = [];
-    for (let index = 0; index < 64; index++) {
-        fields[index] = (<div key={index}></div>);       
-    }
+    let fieldElements = [];
+    this.props.fields.map((value) => {
+      fieldElements[value.id] = <div key={value.id} className={'field ' + (value.active ? '' : 'inactive')}></div>
+    })
+
     return (
-      <div className="field-list">
-        {fields}
+      <div className="field-list" onClick={this.props.activateNew}>
+        {fieldElements}
       </div>
     );
   }
 }
-
-export default FieldGrid;
+var mapStateToProps = (state) => ({
+  fields: state.fields.fields,
+ });
+ var mapDispatchToProps = {
+   activateNew
+ }
+export default connect(mapStateToProps,mapDispatchToProps)(FieldGrid);

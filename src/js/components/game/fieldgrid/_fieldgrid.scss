@@ -6,7 +6,19 @@
     grid-template-columns: repeat(8, 8%);
     grid-gap: 5px;
   }
-  .field-list div {
-    background-color:$light-maroon;
+  .field {
+    background-color:$light-brown;
     aspect-ratio: 1;
+  }
+
+  .inactive {
+    opacity: .5;
+  }
+
+  .growing {
+    background-color: $light-green;
+  }
+
+  .grown {
+    background-color: $green;
   }
