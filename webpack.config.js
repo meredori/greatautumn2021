@@ -38,16 +38,20 @@ module.exports = {
             {
                 test: /\.png/,
                 type: 'asset/resource',
+                generator: {
+                  filename: 'assets/[hash][ext][query]'
+                }
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: 'asset/resource',
+                type: 'asset/resource'
             },
             {
               test: /\.html$/i,
               loader: "html-loader",
             },
-        ]
+        ]   
+      
     },
     resolve: {
       extensions: ['', '.js', '.jsx'],
