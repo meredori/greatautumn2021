@@ -1,7 +1,7 @@
 {
-  "name": "olcjam2021",
+  "name": "greatautumn2021",
   "version": "1.0.0",
-  "description": "Entry for OLC CodeJam 2021",
+  "description": "Entry for greatautumn2021",
   "private": true,
   "scripts": {
     "dev": "webpack serve --mode development",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meredori/olcjam2021.git"
+    "url": "git+https://github.com/meredori/greatautumn2021.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/meredori/olcjam2021/issues"
+    "url": "https://github.com/meredori/greatautumn2021/issues"
   },
-  "homepage": "https://github.com/meredori/olcjam2021#readme",
+  "homepage": "https://github.com/meredori/greatautumn2021#readme",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "express": "^4.17.1",
