@@ -1,9 +1,17 @@
-.col-6 {
-    width: 50%;
+.row {
+
 }
 
+.col-6 {
+    width: 50%;
+    display:inline-block;
+}
+.col-3 {
+    width: 25%;
+    display:inline-block;
+}
 .centered {
-        margin-left: auto;
+        margin-left: 25%;
         margin-right: auto;
 }
 

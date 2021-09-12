@@ -74,11 +74,14 @@ export const fieldSlice = createSlice({
       activateNew: (state) => {
         var index = state.fields.findIndex(e => !e.active);
         state.fields[index].active = true;
+      },
+      growCrop: (state, action) => {
+          console.log(action);
       }
     },
   })
   
   // Action creators are generated for each case reducer function
-  export const { activateNew } = fieldSlice.actions
+  export const { activateNew, growCrop } = fieldSlice.actions
   
   export default fieldSlice.reducer
